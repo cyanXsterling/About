@@ -102,6 +102,10 @@ nav {
     padding-left: .5rem;
 }
 
+nav a:hover {
+    fill: var(--aqua);
+}
+
 #idCard {
     width: 55%;
     margin: 0 auto;
