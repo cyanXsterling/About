@@ -55,6 +55,11 @@ p {
     margin: 1rem .25rem;
 }
 
+span {
+    font-family: var(--font-kofola);
+    color: rgba(255, 255, 255, .7);
+}
+
 h1 {
     font-size: 3.25rem;
     margin: .5rem 0 .25rem 0;
@@ -71,11 +76,6 @@ h3 {
     margin-bottom: 1rem;
     padding: .25rem .5rem;
     background-color: #00555588;
-}
-
-span {
-    font-family: var(--font-kofola);
-    color: rgba(255, 255, 255, .7);
 }
 
 header {
@@ -127,10 +127,17 @@ nav a:hover {
     margin: 0 2rem;
 }
 
+.avatar img {
+    width: 10rem;
+	border-radius: 100%;
+    /* border: .5rem solid #fff; */
+	box-shadow: 0px 5px 5px #00000060;
+}
+
 .flex-btns {
     gap: 1rem;
     display: flex;
-    margin: 1rem 0 0 .5rem;
+    margin-top: 1rem;
     justify-content: center;
 }
 
@@ -150,13 +157,6 @@ nav a:hover {
 
 .custom-btn:hover {
     transform: scale(1.05);
-}
-
-.avatar img {
-    width: 10rem;
-	border-radius: 100%;
-    /* border: .5rem solid #fff; */
-	box-shadow: 0px 5px 5px #00000060;
 }
 
 #mainBody {
@@ -236,8 +236,22 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    header {
+        height: 44vh;
+    }
+
+    #idCard {
+        width: 88%;
+        padding: 1rem;
+    }
+
+    .avatar img {
+        width: 9rem;
+    }
+
     .bio {
-    width: 55vw;
+        width: 70vw;
+        font-size: 1.25rem;
     }
 }
 
@@ -248,15 +262,6 @@ footer {
 
     h2 {
         font-size: 1.75rem;
-    }
-
-    span {
-        font-size: 16px;
-    }
-
-    #idCard {
-        width: 90%;
-        padding: 1rem;
     }
 
     .inner {
@@ -273,15 +278,43 @@ footer {
 
     .flex-btns {
         gap: .5rem;
-        margin: 1rem 0 0 .25rem;
-    }
-
-    .bio {
-        width: 75vw;
-        font-size: 1.25rem;
     }
 
     .contact {
         padding: .5rem .5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 66vh;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    span {
+        font-size: medium;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    .avatar img {
+        width: 7rem;
+    }
+
+    .flex-btns {
+        flex-wrap: wrap;
     }
 }
